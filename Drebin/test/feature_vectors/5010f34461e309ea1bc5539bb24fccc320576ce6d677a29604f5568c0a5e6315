@@ -1,0 +1,11 @@
+activity::.ProgressBarActivity
+feature::android.hardware.touchscreen
+call::sendSMS
+intent::android.intent.action.MAIN
+activity::com.agewap.soft.ProgressBarActivity
+permission::android.permission.SEND_SMS
+call::printStackTrace
+real_permission::android.permission.SEND_SMS
+api_call::android/telephony/SmsManager;->sendTextMessage
+feature::android.hardware.telephony
+intent::android.intent.category.LAUNCHER

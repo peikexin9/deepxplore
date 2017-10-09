@@ -1,0 +1,4 @@
+*.py[cod]
+.idea/
+./Driving/training
+./Drebin/dataset
