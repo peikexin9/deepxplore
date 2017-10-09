@@ -29,7 +29,6 @@ Install from [here](https://github.com/srndic/mimicus)
 + **Drebin** - Drebin Android malware dataset
 
 # To run
-Run
 ```bash
 python neuron_coverage.py
 ```
