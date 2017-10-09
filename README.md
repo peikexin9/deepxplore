@@ -11,9 +11,8 @@ sudo pip install tensorflow
 ```
 if you have gpu,
 ```bash
-sudo pip install tensorflow
+sudo pip install tensorflow-gpu
 ```
-and then follow the instructions [here](https://www.tensorflow.org/install/install_linux) under *NVIDIA requirements to run TensorFlow with GPU support*
 
 ### Keras
 ```bash
