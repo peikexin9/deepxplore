@@ -2,7 +2,7 @@
 
 ## Prerequisit
 ### Python
-The code should be run using python 2.7.12, Tensorflow 1.3.0 and Keras 2.0.8 is supported.
+The code should be run using python 2.7.12, Tensorflow 1.3.0, and Keras 2.0.8.
 
 ### Tensorflow
 ```bash
