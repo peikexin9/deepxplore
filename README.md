@@ -36,4 +36,4 @@ In every directory
 
 # Note
 The trained weights are provided in each directory (if required).
-Drebin's weights are too large, downladed [here](https://drive.google.com/open?id=0B5zIleLkN9FAS0pySkM2d3pzRXM) and put them in ./Drebin/
+Drebin's weights are too large, downladed [here](https://drive.google.com/drive/folders/0B4otJeEcboCaQzFpYkJwb2h3WG8?usp=sharing) and put them in ./Drebin/
