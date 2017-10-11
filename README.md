@@ -30,7 +30,7 @@ Install from [here](https://github.com/srndic/mimicus)
 
 # To run
 ```bash
-python neuron_coverage.py
+python gen_diff.py
 ```
 In every directory
 
