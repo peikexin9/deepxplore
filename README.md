@@ -1,5 +1,5 @@
 # DeepXplore: Systematic DNN testing  (SOSP'17)
-
+See the SOSP'17 paper [DeepXplore: Automated Whitebox Testing of Deep Learning Systems](http://www.cs.columbia.edu/~suman/docs/deepxplore.pdf) for more details.
 ## Prerequisite
 ### Python
 The code should be run using python 2.7.12, Tensorflow 1.3.0, and Keras 2.0.8.
