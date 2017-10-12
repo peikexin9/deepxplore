@@ -36,4 +36,7 @@ In every directory
 
 # Note
 The trained weights are provided in each directory (if required).
-Drebin's weights are not part of this repo as they are too large to be hosted on GitHub, downloaded [here](https://drive.google.com/drive/folders/0B4otJeEcboCaQzFpYkJwb2h3WG8?usp=sharing) and put them in ./Drebin/
+Drebin's weights are not part of this repo as they are too large to be hosted on GitHub, download from [here](https://drive.google.com/drive/folders/0B4otJeEcboCaQzFpYkJwb2h3WG8?usp=sharing) and put them in ./Drebin/
+
+# Coming soon
+How to test your own DNN models.
