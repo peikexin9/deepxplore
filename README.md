@@ -20,7 +20,7 @@ pip install keras
 To set Keras backend to be tensorflow (two options):
 ```bash
 1. Modify ~/.keras/keras.json by setting "backend": "tensorflow"
-2. KERAS_BACKEND=tensorflow python gen_violation.py
+2. KERAS_BACKEND=tensorflow python gen_diff.py
 ```
 
 ### PIL
