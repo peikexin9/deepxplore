@@ -2,7 +2,7 @@
 See the SOSP'17 paper [DeepXplore: Automated Whitebox Testing of Deep Learning Systems](http://www.cs.columbia.edu/~suman/docs/deepxplore.pdf) for more details.
 ## Prerequisite
 ### Python
-The code should be run using python 2.7.12, Tensorflow 1.3.0, and Keras 2.0.8.
+The code should be run using python 2.7.12, Tensorflow 1.3.0, Keras 2.0.8, PIL, h5py, and opencv-python
 
 ### Tensorflow
 ```bash
@@ -10,12 +10,32 @@ sudo pip install tensorflow
 ```
 if you have gpu,
 ```bash
-sudo pip install tensorflow-gpu
+pip install tensorflow-gpu
 ```
 
 ### Keras
 ```bash
-sudo pip install keras
+pip install keras
+```
+To set Keras backend to be tensorflow (two options):
+```bash
+1. Modify ~/.keras/keras.json by setting "backend": "tensorflow"
+2. KERAS_BACKEND=tensorflow python gen_violation.py
+```
+
+### PIL
+```bash
+pip install Pillow
+```
+
+### h5py
+```bash
+pip install h5py
+```
+
+### opencv-python
+```bash
+pip install opencv-python
 ```
 
 ### Mimicus
