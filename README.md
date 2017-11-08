@@ -58,7 +58,7 @@ python gen_diff.py
 The trained weights are provided in each directory (if required).
 Drebin's weights are not part of this repo as they are too large to be hosted on GitHub. Download from [here](https://drive.google.com/drive/folders/0B4otJeEcboCaQzFpYkJwb2h3WG8?usp=sharing) and put them in ./Drebin/.
 
-Note that as DeepXplore use randomness for its exploration, you shoudl fix the seed of the random number generator if you want deterministic and reproducable results. An example is shown below.   
+Note that as DeepXplore use randomness for its exploration, you should fix the seed of the random number generator if you want deterministic and reproducable results. An example is shown below.   
 ```python
 import numpy as np
 import random
