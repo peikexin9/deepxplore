@@ -10,7 +10,7 @@ from keras.applications.resnet50 import ResNet50
 from keras.applications.vgg16 import VGG16
 from keras.applications.vgg19 import VGG19
 from keras.layers import Input
-from scipy.misc import imsave
+import scipy.misc
 
 from configs import bcolors
 from utils import *
@@ -50,7 +50,7 @@ model_layer_dict1, model_layer_dict2, model_layer_dict3 = init_coverage_tables(m
 
 # ==============================================================================================
 # start gen inputs
-img_paths = image.list_pictures('./seeds', ext='JPEG')
+img_paths = image.list_pictures('./seeds/', ext='jpeg')
 for _ in xrange(args.seeds):
     gen_img = preprocess_image(random.choice(img_paths))
     orig_img = gen_img.copy()
@@ -81,9 +81,8 @@ for _ in xrange(args.seeds):
         gen_img_deprocessed = deprocess_image(gen_img)
 
         # save the result to disk
-        imsave('./generated_inputs/' + 'already_differ_' + decode_label(pred1) + '_' + decode_label(
-            pred2) + '_' + decode_label(pred3) + '.png',
-               gen_img_deprocessed)
+        scipy.misc.imsave('./generated_inputs/' + 'already_differ_' + decode_label(pred1) + '_' + decode_label(
+            pred2) + '_' + decode_label(pred3) + '.png', gen_img_deprocessed)
         continue
 
     # if all label agrees
@@ -155,8 +154,10 @@ for _ in xrange(args.seeds):
             orig_img_deprocessed = deprocess_image(orig_img)
 
             # save the result to disk
-            imsave('./generated_inputs/' + args.transformation + '_' + decode_label(pred1) + '_' + decode_label(
-                pred2) + '_' + decode_label(pred3) + '.png', gen_img_deprocessed)
-            imsave('./generated_inputs/' + args.transformation + '_' + decode_label(pred1) + '_' + decode_label(
-                pred2) + '_' + decode_label(pred3) + '_orig.png', orig_img_deprocessed)
+            scipy.misc.imsave(
+                './generated_inputs/' + args.transformation + '_' + decode_label(pred1) + '_' + decode_label(
+                    pred2) + '_' + decode_label(pred3) + '.png', gen_img_deprocessed)
+            scipy.misc.imsave(
+                './generated_inputs/' + args.transformation + '_' + decode_label(pred1) + '_' + decode_label(
+                    pred2) + '_' + decode_label(pred3) + '_orig.png', orig_img_deprocessed)
             break

@@ -5,7 +5,7 @@ import numpy as np
 from keras import backend as K
 from keras.applications.vgg16 import preprocess_input, decode_predictions
 from keras.models import Model
-from keras.preprocessing import image
+from keras_preprocessing import image
 
 
 def preprocess_image(img_path):
@@ -97,7 +97,7 @@ def neuron_covered(model_layer_dict):
 
 def scale(intermediate_layer_output, rmax=1, rmin=0):
     X_std = (intermediate_layer_output - intermediate_layer_output.min()) / (
-        intermediate_layer_output.max() - intermediate_layer_output.min())
+            intermediate_layer_output.max() - intermediate_layer_output.min())
     X_scaled = X_std * (rmax - rmin) + rmin
     return X_scaled
 
